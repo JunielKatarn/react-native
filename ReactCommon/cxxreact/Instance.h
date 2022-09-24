@@ -50,7 +50,7 @@ class RN_EXPORT Instance {
 
   void initializeRuntime();
 
-  void setSourceURL(std::string sourceURL);
+  virtual void setSourceURL(std::string sourceURL);
 
   virtual void loadScriptFromString(
       std::unique_ptr<const JSBigString> string,
